@@ -1,0 +1,742 @@
+<!doctype html>
+<html >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#f02b2b">
+    <meta name="revisit-after" content="2 days">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Tất cả sản phẩm">
+    <link rel="stylesheet" href="../../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />>
+    <link href="../../public/css/main.css" rel="stylesheet">
+    <link href="../../public/css/style.css" rel="stylesheet">
+    <link href="../../public/css/sanpham.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+
+<body >
+
+    <header class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-md-2">
+              <div class="header__logo">
+                <a href="/"
+                  ><img src="/T_Sport/public/img/logo/logo.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-7">
+              <div class="header__top__left">
+                <nav class="header__menu">
+                  <ul>
+                    <li class=""><a href="/">Trang chủ</a></li>
+                    <li class=""><a href="/shop">Mua sắm</a></li>
+                    <li class=""><a href="/blog">Bài viết</a></li>
+                    <li class=""><a href="/aboutUs">Về chúng tôi</a></li>
+                    <li class=""><a href="/contact">Liên hệ</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+              <div class="header__top__right align-right">
+                <div class="header__top__right__auth align-right">
+                  <div class="search-top" style="margin: 0px 20px">
+                    <form class="search-box">
+                      <input type="text" placeholder="Bạn muốn tìm gì?" /><button
+                        type="reset"
+                      ></button>
+                    </form>
+                  </div>
+                  <a href="/myaccount">
+                    <i class="fa fa-user" style="margin: 0px 20px"></i>
+                  </a>
+                  <a href="/shopping-cart">
+                    <i class="fa fa-shopping-cart" style="margin-left: 20px"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="humberger__open">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+      </header>
+
+
+    <section class="bread-crumb mb-3">
+        <span class="crumb-border"></span>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 a-left">
+                    <ul class="breadcrumb m-0 px-0">
+                        <li>
+                            <a href="/" target="_self"><span>Trang chủ</span></a>
+                            <span class="mr_lr">&nbsp;/&nbsp;</span>
+                        </li>
+
+                        <li>
+                            <a href="/collections/all" target="_self">
+                                <span>Danh mục</span>
+                            </a>
+                            <span class="mr_lr">&nbsp;/&nbsp;</span>
+                        </li>
+
+                        <li class="active">
+                            <span>Tất cả sản phẩm</span>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="collection_banner mb-3 container text-center">
+        <a class="banner" href="/collections/all" title="Ảnh banner">
+            <picture>
+                <source media="(min-width: 768px)"
+                    srcset="//theme.hstatic.net/1000150581/1001058888/14/collection_main_banner.jpg?v=287">
+                <source media="(max-width: 767px)"
+                    srcset="//theme.hstatic.net/1000150581/1001058888/14/collection_main_banner_large.jpg?v=287">
+                <img class="img-fluid"
+                    src="//theme.hstatic.net/1000150581/1001058888/14/collection_main_banner.jpg?v=287" width="1410"
+                    height="183" alt="Ảnh banner">
+            </picture>
+        </a>
+    </div>
+    
+    <div class="section mb-3">
+        <div class="container">
+            <link rel="preload" as="style" type="text/css"
+                href="//theme.hstatic.net/1000150581/1001058888/14/coupon.css?v=287">
+
+            <link rel="stylesheet" href="//theme.hstatic.net/1000150581/1001058888/14/coupon.css?v=287">
+
+            <div class="section_coupons">
+                <div class="container">
+                    <div class="row scroll justify-content-xl-center">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="section wrap_background">
+        <div class="container">
+            <div class="bg_collection section">
+                <div class="coll-head">
+                    <h1 class="title_page collection-title mb-0 pb-3">
+                        Tất cả sản phẩm </h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 col-sm-12">
+                        <aside class=" scroll card py-2 dqdt-sidebar sidebar left-content">
+                            <div class="wrap_background_aside asidecollection">
+                                <div class="filter-content aside-filter">
+                                    <div class="filter-container">
+
+                                        <aside class="aside-item filter-tag-style-1">
+                                            <div class="aside-title">
+                                                <h2 class="title-head margin-top-0"><span>Phân Loại Hàng Hóa</span></h2>
+                                            </div>
+                                            <div class="aside-content filter-group clearfix scroll">
+                                                <ul style="overflow: visible;">
+                                                    <li class="filter-item color filter-item--check-box filter-item--green">
+                                                        <label class="custom-checkbox color" for="filter-tag-23q1">
+                                                            <input type="checkbox" id="filter-tag-23q1" >
+                                                            <i class="fa fa-23q1" style="--filter-color:#ebebeb;"></i>
+                                                            23Q1
+                                                        </label>
+                                                    </li>
+                                                    <li class="filter-item color filter-item--check-box filter-item--green">
+                                                        <label class="custom-checkbox color" for="filter-tag-23q2">
+                                                            <input type="checkbox" id="filter-tag-23q2">
+                                                            <i class="fa fa-23q2" style="--filter-color:#ebebeb;"></i>
+                                                            23Q2
+                                                        </label>
+                                                    </li>
+                                                    <li class="filter-item color filter-item--check-box filter-item--green">
+                                                        <label class="custom-checkbox color" for="filter-tag-23q3">
+                                                            <input type="checkbox" id="filter-tag-23q3">
+                                                            <i class="fa fa-23q3" style="--filter-color:#ebebeb;"></i>
+                                                            23Q3
+                                                        </label>
+                                                    </li>
+                                                    <li class="filter-item color filter-item--check-box filter-item--green">
+                                                        <label class="custom-checkbox color" for="filter-tag-23q4">
+                                                            <input type="checkbox" id="filter-tag-23q4">
+                                                            <i class="fa fa-23q4" style="--filter-color:#ebebeb;"></i>
+                                                            23Q4
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </aside>
+                                        
+                                        <aside class="aside-item filter-price dq-filterxx">
+                                            <div class="aside-title">
+                                                <h2 class="title-head margin-top-0"><span>Mức giá</span></h2>
+                                            </div>
+                                            <div class="aside-content filter-group scroll">
+                                                <ul>
+                                                    <li class="filter-item filter-item--check-box filter-item--green">
+                                                        <label class="custom-checkbox" for="filter-duoi-300000">
+                                                            <input type="checkbox" id="filter-duoi-300000" data-group="Khoảng giá" data-field="price" data-text="Dưới 300000" value="(price:product <300000)" data-operator="||">
+                                                            <i class="fa"></i>Giá dưới 300,000₫
+                                                        </label>
+                                                    </li>
+                                                    <li class="filter-item filter-item--check-box filter-item--green">
+                                                        <label class="custom-checkbox" for="filter-300000-500000">
+                                                            <input type="checkbox" id="filter-300000-500000" data-group="Khoảng giá" data-field="price" data-text="Trên 500000" value="(price:product >=300000 )&amp;&amp; (price:product <=500000)" data-operator="||">
+                                                            <i class="fa"></i>300,000₫ - 500,000₫
+                                                        </label>
+                                                    </li>
+                                                    <li class="filter-item filter-item--check-box filter-item--green">
+                                                        <label class="custom-checkbox" for="filter-500000-700000">
+                                                            <input type="checkbox" id="filter-500000-700000" data-group="Khoảng giá" data-field="price" data-text="Trên 700000" value="(price:product >=500000 )&amp;&amp; (price:product <=700000)" data-operator="||">
+                                                            <i class="fa"></i>500,000₫ - 700,000₫
+                                                        </label>
+                                                    </li>
+                                                    <li class="filter-item filter-item--check-box filter-item--green">
+                                                        <label class="custom-checkbox" for="filter-700000-1000000">
+                                                            <input type="checkbox" id="filter-700000-1000000" data-group="Khoảng giá" data-field="price" data-text="Trên 1000000" value="(price:product >=700000 )&amp;&amp; (price:product <=1000000)" data-operator="||">
+                                                            <i class="fa"></i>700,000₫ - 1,000,000₫
+                                                        </label>
+                                                    </li>
+                                                    <li class="filter-item filter-item--check-box filter-item--green">
+                                                        <label class="custom-checkbox" for="filter-tren-2000000">
+                                                            <input type="checkbox" id="filter-tren-2000000" data-group="Khoảng giá" data-field="price" data-text="Trên 2000000" value="(price:product >=2000000)" data-operator="||">
+                                                            <i class="fa"></i>Giá trên 2,000,000₫
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </aside>
+                                        
+                                        <aside class="aside-item sidebar-item filter-tag-style-1">
+                                            <div class="aside-title">
+                                                <h2 class="title-head margin-top-0">
+                                                    <span>Sản Phẩm</span>
+                                                </h2>
+                                            </div>
+                                            <div class="module-content aside-content filter-group scroll">
+                                                <ul>
+                                                    <li class="filter-item filter_size filter-item--check-box filter-item--green">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" id="filter-san-pham-ban-tot-nhat" data-group="tag2" data-field="tag" data-text="Sản Phẩm Bán Tốt Nhất" value="product contains Sản Phẩm Bán Tốt Nhất" data-operator="||">
+                                                            <i class="fa"></i>
+                                                            Sản Phẩm Bán Tốt Nhất
+                                                        </label>
+                                                    </li>
+                                                    <li class="filter-item filter_size filter-item--check-box filter-item--green">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" id="filter-hang-moi-ve" data-group="tag2" data-field="tag" data-text="Hàng Mới Về" value="product contains Hàng Mới Về" data-operator="||">
+                                                            <i class="fa"></i>
+                                                            Hàng Mới Về
+                                                        </label>
+                                                    </li>
+                                                    <li class="filter-item filter_size filter-item--check-box filter-item--green">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" id="filter-hang-giam-gia" data-group="tag2" data-field="tag" data-text="Hàng Giảm Giá" value="product contains Hàng Giảm Giá" data-operator="||">
+                                                            <i class="fa"></i>
+                                                            Hàng Giảm Giá
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </aside>
+                                        
+
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="main_container collection col-lg-9 col-12 pl-lg-0">
+                        <div class="category-products products">
+
+                            <section class="products-view products-view-grid collection_reponsive list_hover_pro mb-0">
+                                <div class="row content-col">
+
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-6 product-col">
+                                        <div class="item_product_main item_product_main_relative">
+                                            <form action="#" method="post" class="variants product-action product-item-wishlist"
+                                                data-pro="1050700230" data-id="product-actions-1050700230" enctype="multipart/form-data">
+                                                <div class="product-thumbnail pos-relative">
+                                                    <a class="image_thumb pos-relative embed-responsive embed-responsive-3by4"
+                                                        href="/ct-sanpham.html"
+                                                        title="Áo khoác gió thể thao nam Anta 852237613-2">
+                                                        <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                            style="--image-scale: 1;"
+                                                            src="//product.hstatic.net/1000150581/product/852237613-2_5ff76b4cb266421798ead49da1f842a9_large.jpg"
+                                                            alt="Áo khoác gió thể thao nam Anta 852237613-2">
+                                                    </a>
+                                                    <input type="hidden" name="id" value="1113913891">
+                                                    <div class="action-bar">
+                                                        <button class="action-child btn add_to_cart active">
+                                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                        <span class="action-name">Thêm vào giỏ</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <span class="product-name "><a class="link"
+                                                            href="/ct-sanpham.html"
+                                                            title="Áo khoác gió thể thao nam Anta 852237613-2">Áo khoác gió thể thao nam Anta
+                                                            852237613-2</a></span>
+                                                    <div class="product-rating">
+                                                        <div class="haravan-product-reviews-badge" data-id="1050700230">
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item-cta position-relative">
+                                                        <div class="price-box">
+                                                            <span class="price">899,500₫</span>
+                                                            <span class="compare-price">1,799,000₫</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-6 product-col">
+                                        <div class="item_product_main item_product_main_relative">
+                                            <form action="#" method="post" class="variants product-action product-item-wishlist"
+                                                data-pro="1050700230" data-id="product-actions-1050700230" enctype="multipart/form-data">
+                                                <div class="product-thumbnail pos-relative">
+                                                    <a class="image_thumb pos-relative embed-responsive embed-responsive-3by4"
+                                                        href="/ct-sanpham.html"
+                                                        title="Áo khoác gió thể thao nam Anta 852237613-2">
+                                                        <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                            style="--image-scale: 1;"
+                                                            src="//product.hstatic.net/1000150581/product/852237613-2_5ff76b4cb266421798ead49da1f842a9_large.jpg"
+                                                            alt="Áo khoác gió thể thao nam Anta 852237613-2">
+                                                    </a>
+                                                    <input type="hidden" name="id" value="1113913891">
+                                                    <div class="action-bar">
+                                                        <button class="action-child btn add_to_cart active">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span class="action-name">Thêm vào giỏ</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <span class="product-name "><a class="link"
+                                                            href="/ct-sanpham.html"
+                                                            title="Áo khoác gió thể thao nam Anta 852237613-2">Áo khoác gió thể thao nam Anta
+                                                            852237613-2</a></span>
+                                                    <div class="product-rating">
+                                                        <div class="haravan-product-reviews-badge" data-id="1050700230">
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item-cta position-relative">
+                                                        <div class="price-box">
+                                                            <span class="price">899,500₫</span>
+                                                            <span class="compare-price">1,799,000₫</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-6 product-col">
+                                        <div class="item_product_main item_product_main_relative">
+                                            <form action="#" method="post" class="variants product-action product-item-wishlist"
+                                                data-pro="1050700230" data-id="product-actions-1050700230" enctype="multipart/form-data">
+                                                <div class="product-thumbnail pos-relative">
+                                                    <a class="image_thumb pos-relative embed-responsive embed-responsive-3by4"
+                                                        href="/ct-sanpham.html"
+                                                        title="Áo khoác gió thể thao nam Anta 852237613-2">
+                                                        <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                            style="--image-scale: 1;"
+                                                            src="//product.hstatic.net/1000150581/product/852237613-2_5ff76b4cb266421798ead49da1f842a9_large.jpg"
+                                                            alt="Áo khoác gió thể thao nam Anta 852237613-2">
+                                                    </a>
+                                                    <input type="hidden" name="id" value="1113913891">
+                                                    <div class="action-bar">
+                                                        <button class="action-child btn add_to_cart active">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span class="action-name">Thêm vào giỏ</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <span class="product-name "><a class="link"
+                                                            href="/ct-sanpham.html"
+                                                            title="Áo khoác gió thể thao nam Anta 852237613-2">Áo khoác gió thể thao nam Anta
+                                                            852237613-2</a></span>
+                                                    <div class="product-rating">
+                                                        <div class="haravan-product-reviews-badge" data-id="1050700230">
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item-cta position-relative">
+                                                        <div class="price-box">
+                                                            <span class="price">899,500₫</span>
+                                                            <span class="compare-price">1,799,000₫</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-6 product-col">
+                                        <div class="item_product_main item_product_main_relative">
+                                            <form action="#" method="post" class="variants product-action product-item-wishlist"
+                                                data-pro="1050700230" data-id="product-actions-1050700230" enctype="multipart/form-data">
+                                                <div class="product-thumbnail pos-relative">
+                                                    <a class="image_thumb pos-relative embed-responsive embed-responsive-3by4"
+                                                        href="/ct-sanpham.html"
+                                                        title="Áo khoác gió thể thao nam Anta 852237613-2">
+                                                        <img loading="lazy" class="img-fetured" width="480" height="480"
+                                                            style="--image-scale: 1;"
+                                                            src="//product.hstatic.net/1000150581/product/852237613-2_5ff76b4cb266421798ead49da1f842a9_large.jpg"
+                                                            alt="Áo khoác gió thể thao nam Anta 852237613-2">
+                                                    </a>
+                                                    <input type="hidden" name="id" value="1113913891">
+                                                    <div class="action-bar">
+                                                        <button class="action-child btn add_to_cart active">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span class="action-name">Thêm vào giỏ</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <span class="product-name "><a class="link"
+                                                            href="/ct-sanpham.html"
+                                                            title="Áo khoác gió thể thao nam Anta 852237613-2">Áo khoác gió thể thao nam Anta
+                                                            852237613-2</a></span>
+                                                    <div class="product-rating">
+                                                        <div class="haravan-product-reviews-badge" data-id="1050700230">
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-item-cta position-relative">
+                                                        <div class="price-box">
+                                                            <span class="price">899,500₫</span>
+                                                            <span class="compare-price">1,799,000₫</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+
+                            <div class="section pagenav">
+
+                                <nav class="clearfix relative nav_pagi w_100">
+                                    <ul class="pagination clearfix float-right">
+
+                                        <li class="page-item "><a class="page-link" href="#"><i class="fa-solid fa-arrow-left"></i></a></li>
+
+                                        <li class="active page-item "><a class="page-link"
+                                                href="">1</a></li>
+
+                                        <li class="page-item"><a class="page-link" onclick="doSearch(2)"
+                                                href="">2</a>
+                                        </li>
+
+                                        <li class="page-item"><a class="page-link" onclick="doSearch(3)"
+                                                href="">3</a>
+                                        </li>
+
+                                        <li class="page-item"><a class="page-link" href="">…</a></li>
+
+                                        <li class="page-item "><a class="page-link" href="#"><i class="fa-solid fa-arrow-right"></i></a></li>
+                                    </ul>
+                                </nav>
+                                <script>
+                                    var cuPage = 1
+                                </script>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section container" id="recent-view-coll">
+        <div class="title_module section heading-bar d-flex justify-content-between align-items-center">
+            <h2 class="bf_flower heading-bar__title">
+                Sản phẩm bán chạy
+            </h2>
+        </div>
+        <div class="recent-view-list m-0 row">
+            <div class="product-col">
+                <div class="item_product_main item_product_main_relative">
+                    <form action="#" method="post" class="variants product-action product-item-wishlist"
+                        data-pro="1045645398" data-id="product-actions-1045645398" enctype="multipart/form-data">
+                        <div class="product-thumbnail pos-relative">
+                            <a class="image_thumb pos-relative embed-responsive embed-responsive-3by4"
+                                href="#"
+                                title="">
+                                <img class="img-fetured" src="//product.hstatic.net/1000150581/product/812315586-10__20__e18efc711f0047c09750da28e2e07e02_large.jpg"
+                                    alt="">
+                            </a>
+                            <div class="action-bar">
+                                <button class="action-child btn add_to_cart active">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span class="action-name">Thêm vào giỏ</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-name ">
+                                <a class="link" href="#"
+                                    title="">Giày chạy thể thao nam A-FLASHFOAM Anta</a>
+                            </span>
+                            <div class="product-rating">
+                                <div class="haravan-product-reviews-badge" data-id="1045645398"> </div>
+                            </div>
+                            <div class="product-item-cta position-relative">
+                                <div class="price-box">
+                                    <span class="price">1,799,100₫</span>
+                                    <span class="compare-price">1,999,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="product-col">
+                <div class="item_product_main item_product_main_relative">
+                    <form action="#" method="post" class="variants product-action product-item-wishlist"
+                        data-pro="1045645398" data-id="product-actions-1045645398" enctype="multipart/form-data">
+                        <div class="product-thumbnail pos-relative">
+                            <a class="image_thumb pos-relative embed-responsive embed-responsive-3by4"
+                                href="#"
+                                title="">
+                                <img class="img-fetured" src="//product.hstatic.net/1000150581/product/812315586-10__20__e18efc711f0047c09750da28e2e07e02_large.jpg"
+                                    alt="">
+                            </a>
+                            <div class="action-bar">
+                                <button class="action-child btn add_to_cart active">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span class="action-name">Thêm vào giỏ</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-name ">
+                                <a class="link" href="#"
+                                    title="">Giày chạy thể thao nam A-FLASHFOAM Anta</a>
+                            </span>
+                            <div class="product-rating">
+                                <div class="haravan-product-reviews-badge" data-id="1045645398"> </div>
+                            </div>
+                            <div class="product-item-cta position-relative">
+                                <div class="price-box">
+                                    <span class="price">1,799,100₫</span>
+                                    <span class="compare-price">1,999,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="product-col">
+                <div class="item_product_main item_product_main_relative">
+                    <form action="#" method="post" class="variants product-action product-item-wishlist"
+                        data-pro="1045645398" data-id="product-actions-1045645398" enctype="multipart/form-data">
+                        <div class="product-thumbnail pos-relative">
+                            <a class="image_thumb pos-relative embed-responsive embed-responsive-3by4"
+                                href="#"
+                                title="">
+                                <img class="img-fetured" src="//product.hstatic.net/1000150581/product/812315586-10__20__e18efc711f0047c09750da28e2e07e02_large.jpg"
+                                    alt="">
+                            </a>
+                            <div class="action-bar">
+                                <button class="action-child btn add_to_cart active">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span class="action-name">Thêm vào giỏ</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-name ">
+                                <a class="link" href="#"
+                                    title="">Giày chạy thể thao nam A-FLASHFOAM Anta</a>
+                            </span>
+                            <div class="product-rating">
+                                <div class="haravan-product-reviews-badge" data-id="1045645398"> </div>
+                            </div>
+                            <div class="product-item-cta position-relative">
+                                <div class="price-box">
+                                    <span class="price">1,799,100₫</span>
+                                    <span class="compare-price">1,999,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+                        <div class="product-col">
+                <div class="item_product_main item_product_main_relative">
+                    <form action="#" method="post" class="variants product-action product-item-wishlist"
+                        data-pro="1045645398" data-id="product-actions-1045645398" enctype="multipart/form-data">
+                        <div class="product-thumbnail pos-relative">
+                            <a class="image_thumb pos-relative embed-responsive embed-responsive-3by4"
+                                href="#"
+                                title="">
+                                <img class="img-fetured" src="//product.hstatic.net/1000150581/product/812315586-10__20__e18efc711f0047c09750da28e2e07e02_large.jpg"
+                                    alt="">
+                            </a>
+                            <div class="action-bar">
+                                <button class="action-child btn add_to_cart active">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span class="action-name">Thêm vào giỏ</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-name ">
+                                <a class="link" href="#"
+                                    title="">Giày chạy thể thao nam A-FLASHFOAM Anta</a>
+                            </span>
+                            <div class="product-rating">
+                                <div class="haravan-product-reviews-badge" data-id="1045645398"> </div>
+                            </div>
+                            <div class="product-item-cta position-relative">
+                                <div class="price-box">
+                                    <span class="price">1,799,100₫</span>
+                                    <span class="compare-price">1,999,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="product-col">
+                <div class="item_product_main item_product_main_relative">
+                    <form action="#" method="post" class="variants product-action product-item-wishlist"
+                        data-pro="1045645398" data-id="product-actions-1045645398" enctype="multipart/form-data">
+                        <div class="product-thumbnail pos-relative">
+                            <a class="image_thumb pos-relative embed-responsive embed-responsive-3by4"
+                                href="#"
+                                title="">
+                                <img class="img-fetured" src="//product.hstatic.net/1000150581/product/812315586-10__20__e18efc711f0047c09750da28e2e07e02_large.jpg"
+                                    alt="">
+                            </a>
+                            <div class="action-bar">
+                                <button class="action-child btn add_to_cart active">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span class="action-name">Thêm vào giỏ</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <span class="product-name ">
+                                <a class="link" href="#"
+                                    title="">Giày chạy thể thao nam A-FLASHFOAM Anta</a>
+                            </span>
+                            <div class="product-rating">
+                                <div class="haravan-product-reviews-badge" data-id="1045645398"> </div>
+                            </div>
+                            <div class="product-item-cta position-relative">
+                                <div class="price-box">
+                                    <span class="price">1,799,100₫</span>
+                                    <span class="compare-price">1,999,000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Footer Section Begin -->
+<footer class="footer spad">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-6 col-sm-6">
+          <div class="footer__about">
+            <div class="footer__about__logo">
+              <a href="/"><img src="/img/logo.png" alt="" /></a>
+            </div>
+            <ul>
+              <li>Địa chỉ: Liên Chiểu, Đà Nẵng</li>
+              <li>Điện thoại: +84 11.188.888</li>
+              <li>Email: hcmus@hcmus.edu.vn</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="footer__widget">
+            <h6>Giới thiệu</h6>
+            <ul>
+              <li><a href="#">Về chúng tôi</a></li>
+              <!-- <li><a href="#">About Our Shop</a></li> -->
+              <li><a href="#">Mua sắm an toàn</a></li>
+              <li><a href="#">Thông tin giao hàng</a></li>
+              <li><a href="#">Chính sách bảo mật</a></li>
+              <li><a href="#">Đường đi</a></li>
+            </ul>
+            <!-- <ul>
+                  <li><a href="#">Who We Are</a></li>
+                  <li><a href="#">Our Services</a></li>
+                  <li><a href="#">Projects</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Innovation</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                </ul> -->
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="footer__widget">
+            <h6>Tham gia mua sắm với chúng tôi</h6>
+            <p>Nhận thông tin sản phẩm mới nhất qua email</p>
+            <form action="#">
+              <input type="text" placeholder="Điền email của bản" />
+              <button type="submit" class="site-btn">Đăng ký</button>
+            </form>
+            <div
+              class="footer__widget__social"
+              style="display: flex; align-items: center"
+            >
+              <a href="#" class="center"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="center"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="center"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="center"><i class="fab fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer__copyright">
+            <div class="footer__copyright__text"><p
+              ><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+              </p></div>
+            <div class="footer__copyright__payment"><img
+                src="/img/payment-item.png"
+                alt=""
+              /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    </div>
+    
+</body>
+
+</html>
