@@ -23,7 +23,7 @@ module.exports = {
       }
     }
 
-    res.render("home/home", {
+    res.render("", {
       category: categories,
       categoryData: categoryData,
     });

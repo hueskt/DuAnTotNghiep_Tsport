@@ -23,17 +23,17 @@ module.exports = {
 
     let categories = await Category.find({});
     let leftPage = await utilsPagination.getLeftPage(
-      "/shop-grid",
+      "/",
       page,
       sizePage
     );
     let pagination = await utilsPagination.getPagination(
-      "/shop-grid",
+      "/",
       page,
       sizePage
     );
     let rightPage = await utilsPagination.getRightPage(
-      "/shop-grid",
+      "/",
       page,
       sizePage
     );
@@ -41,7 +41,7 @@ module.exports = {
     let latestProducts = await Product.find({});
     latestProducts = latestProducts.slice(0, 3);
 
-    res.render("shop-grid/shop-grid", {
+    res.render("shop-grid/", {
       products: utils.mutipleMongooseToObject(products),
       size: size,
       currentPage: page,
@@ -249,7 +249,7 @@ module.exports = {
     });
     latestProducts = latestProducts.slice(0, 3);
 
-    res.render("shop-grid/shop-grid", {
+    res.render("shop-grid/", {
       products: utils.mutipleMongooseToObject(products),
       size: size,
       category: utils.mutipleMongooseToObject(categories),

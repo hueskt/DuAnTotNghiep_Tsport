@@ -8,18 +8,15 @@ const chatBotRouter = require("./chatbot");
 
 function route(app) {
 
-  app.get('/sanpham', function (req, res) {
-    res.render('layouts/sanpham'); // Hiển thị file view có tên "sanpham.ejs" trong thư mục views
-  });
-
   app.use("/home", homeRouter);
 
-  app.use("/shop-grid", productRouter);
-
+  app.use("/shop-grid", function (req, res) {
+    res.render("shop-grid/");
+  });
   app.use("/", userRouter);
 
-  app.get("/shop-details", function (req, res) {
-    res.render("shop-details/shop-details");
+  app.get("/shop-detail", function (req, res) {
+    res.render("shop-detail/");
   });
 
   app.get("/shoping-cart", function (req, res) {
