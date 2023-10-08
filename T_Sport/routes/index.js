@@ -7,6 +7,11 @@ const checkOutRouter2 = require("./checkOut2");
 const chatBotRouter = require("./chatbot");
 
 function route(app) {
+
+  app.get('/sanpham', function (req, res) {
+    res.render('layouts/sanpham'); // Hiển thị file view có tên "sanpham.ejs" trong thư mục views
+  });
+
   app.use("/home", homeRouter);
 
   app.use("/shop-grid", productRouter);
@@ -34,6 +39,8 @@ function route(app) {
   });
 
   app.use("/checkout", checkOutRouter);
+
+
 
   //app.use("/webhook",chatBotRouter);
 }
